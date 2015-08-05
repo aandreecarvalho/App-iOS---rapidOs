@@ -1,0 +1,51 @@
+
+/* Class = "UIBarButtonItem"; title = "F"; ObjectID = "56l-sw-ceW"; */
+"56l-sw-ceW.title" = "F";
+
+/* Class = "UITabBarItem"; title = "Mapa"; ObjectID = "5lc-ad-YyZ"; */
+"5lc-ad-YyZ.title" = "Mapa";
+
+/* Class = "UIBarButtonItem"; title = "M"; ObjectID = "DgP-sP-rCD"; */
+"DgP-sP-rCD.title" = "M";
+
+/* Class = "UILabel"; text = "Por favor sincronize o aplicativo"; ObjectID = "O2B-G4-RtJ"; */
+"O2B-G4-RtJ.text" = "Por favor sincronize o aplicativo";
+
+/* Class = "UISegmentedControl"; ODt-r7-u9d.segmentTitles[0] = "Todas"; ObjectID = "ODt-r7-u9d"; */
+"ODt-r7-u9d.segmentTitles[0]" = "Todas";
+
+/* Class = "UISegmentedControl"; ODt-r7-u9d.segmentTitles[1] = "Ativas"; ObjectID = "ODt-r7-u9d"; */
+"ODt-r7-u9d.segmentTitles[1]" = "Ativas";
+
+/* Class = "UISegmentedControl"; ODt-r7-u9d.segmentTitles[2] = "Em pausa"; ObjectID = "ODt-r7-u9d"; */
+"ODt-r7-u9d.segmentTitles[2]" = "Em pausa";
+
+/* Class = "UISegmentedControl"; ODt-r7-u9d.segmentTitles[3] = "Canceladas"; ObjectID = "ODt-r7-u9d"; */
+"ODt-r7-u9d.segmentTitles[3]" = "Canceladas";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "Ws3-op-khF"; */
+"Ws3-op-khF.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "aRe-7P-DGG"; */
+"aRe-7P-DGG.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "usuario"; ObjectID = "elT-qw-NBt"; */
+"elT-qw-NBt.placeholder" = "usuario";
+
+/* Class = "UINavigationItem"; title = "rapidOs"; ObjectID = "fnO-t7-XZW"; */
+"fnO-t7-XZW.title" = "rapidOs";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lWn-RQ-4mb"; */
+"lWn-RQ-4mb.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "senha"; ObjectID = "lzy-Yg-iS3"; */
+"lzy-Yg-iS3.placeholder" = "senha";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nLJ-eA-uM7"; */
+"nLJ-eA-uM7.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Serviços"; ObjectID = "qZX-QG-3Ac"; */
+"qZX-QG-3Ac.title" = "Serviços";
+
+/* Class = "UIButton"; normalTitle = "Entrar"; ObjectID = "scc-YG-QNK"; */
+"scc-YG-QNK.normalTitle" = "Entrar";
