@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A244d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -180,56 +180,62 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="2"/>
                                 <animations/>
                             </progressView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GV-5T-KbN">
+                                <rect key="frame" x="256" y="236" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5y8-ID-aO2">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <animations/>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="Vte-ve-aA1">
+                                    <barButtonItem image="backpage.png" id="Vte-ve-aA1">
                                         <connections>
                                             <action selector="goBack:" destination="wcJ-zl-xsX" id="Cps-N8-wuB"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="jlv-zd-ldW"/>
-                                    <barButtonItem systemItem="fastForward" id="VnA-V8-RfK">
+                                    <barButtonItem image="fowardpage.png" id="VnA-V8-RfK">
                                         <connections>
                                             <action selector="goFoward:" destination="wcJ-zl-xsX" id="JCu-Jh-t7G"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="P4d-XY-YW0"/>
-                                    <barButtonItem title="F" id="56l-sw-ceW">
+                                    <barButtonItem image="facebook.png" id="56l-sw-ceW">
                                         <connections>
                                             <action selector="goFacebook:" destination="wcJ-zl-xsX" id="Q7b-EV-Yz1"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="trJ-P0-MR8"/>
+                                    <barButtonItem image="call.png" id="6Td-V6-keO">
+                                        <connections>
+                                            <action selector="menuTelefones:" destination="wcJ-zl-xsX" id="80z-oc-uXF"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="HbW-th-CfH"/>
-                                    <barButtonItem title="M" id="DgP-sP-rCD"/>
+                                    <barButtonItem image="mail.png" id="DgP-sP-rCD"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="VRW-y1-E1e"/>
-                                    <barButtonItem systemItem="stop" id="drZ-X0-3f3">
+                                    <barButtonItem image="stop.png" id="drZ-X0-3f3">
                                         <connections>
                                             <action selector="stopLoading:" destination="wcJ-zl-xsX" id="he8-a7-Zy0"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="refresh" id="OQ3-y1-L4O">
+                                    <barButtonItem image="refresh.png" id="OQ3-y1-L4O">
                                         <connections>
                                             <action selector="reload:" destination="wcJ-zl-xsX" id="EfI-Rs-gly"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7GV-5T-KbN">
-                                <rect key="frame" x="256" y="236" width="240" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OaJ-54-hJj" firstAttribute="top" secondItem="5y8-ID-aO2" secondAttribute="bottom" id="2b0-no-caO"/>
-                            <constraint firstAttribute="trailing" secondItem="5y8-ID-aO2" secondAttribute="trailing" id="GGs-Mj-Eea"/>
-                            <constraint firstItem="5y8-ID-aO2" firstAttribute="leading" secondItem="VW4-LU-b5x" secondAttribute="leading" id="ODs-NH-HjA"/>
+                            <constraint firstAttribute="trailing" secondItem="5y8-ID-aO2" secondAttribute="trailing" id="KZa-pu-fSY"/>
                             <constraint firstAttribute="trailing" secondItem="oht-hh-JjX" secondAttribute="trailing" id="fIF-jI-acX"/>
                             <constraint firstItem="oht-hh-JjX" firstAttribute="leading" secondItem="VW4-LU-b5x" secondAttribute="leading" id="fhJ-rb-yA1"/>
+                            <constraint firstItem="5y8-ID-aO2" firstAttribute="leading" secondItem="VW4-LU-b5x" secondAttribute="leading" id="gAa-36-fzW"/>
+                            <constraint firstItem="OaJ-54-hJj" firstAttribute="top" secondItem="5y8-ID-aO2" secondAttribute="bottom" id="mKp-Fc-c3A"/>
                             <constraint firstItem="oht-hh-JjX" firstAttribute="top" secondItem="bh2-dV-Gll" secondAttribute="bottom" id="wYE-YH-oiW"/>
                         </constraints>
                         <variation key="default">
@@ -252,11 +258,11 @@
                             </connections>
                         </button>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="edO-b8-6wi">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ws3-op-khF">
-                                <rect key="frame" x="556" y="7" width="24" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ws3-op-khF">
+                                <rect key="frame" x="546" y="11" width="34" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="X">
+                                <state key="normal" image="close.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -268,6 +274,7 @@
                     <connections>
                         <outlet property="barraProgresso" destination="oht-hh-JjX" id="R3T-ox-JEa"/>
                         <outlet property="btnBack" destination="Vte-ve-aA1" id="h4d-gd-aMz"/>
+                        <outlet property="btnCall" destination="6Td-V6-keO" id="NBs-n1-eY1"/>
                         <outlet property="btnClose" destination="Ws3-op-khF" id="YjP-n8-7rn"/>
                         <outlet property="btnEmail" destination="DgP-sP-rCD" id="0wm-ch-tfg"/>
                         <outlet property="btnFacebook" destination="56l-sw-ceW" id="Mpq-ET-GBN"/>
@@ -277,8 +284,9 @@
                         <outlet property="btnStop" destination="drZ-X0-3f3" id="pf6-mA-XlI"/>
                         <outlet property="flexible1" destination="jlv-zd-ldW" id="25v-wH-h3i"/>
                         <outlet property="flexible2" destination="P4d-XY-YW0" id="mcl-PJ-zDP"/>
-                        <outlet property="flexible3" destination="HbW-th-CfH" id="noW-qF-lIS"/>
-                        <outlet property="flexible4" destination="VRW-y1-E1e" id="AGq-ef-1vA"/>
+                        <outlet property="flexible3" destination="trJ-P0-MR8" id="y3m-38-so7"/>
+                        <outlet property="flexible4" destination="HbW-th-CfH" id="FbT-7i-Iby"/>
+                        <outlet property="flexible5" destination="VRW-y1-E1e" id="Fpc-bk-WZr"/>
                         <outlet property="toolBar" destination="5y8-ID-aO2" id="r8t-Fj-WFV"/>
                     </connections>
                 </viewController>
@@ -508,7 +516,15 @@
     </scenes>
     <resources>
         <image name="back.png" width="375" height="667"/>
+        <image name="backpage.png" width="22" height="22"/>
+        <image name="call.png" width="22" height="22"/>
+        <image name="close.png" width="22" height="22"/>
+        <image name="facebook.png" width="22" height="22"/>
+        <image name="fowardpage.png" width="22" height="22"/>
         <image name="imgLogo.png" width="283" height="151"/>
         <image name="imgUrl.png" width="128" height="13"/>
+        <image name="mail.png" width="22" height="22"/>
+        <image name="refresh.png" width="22" height="22"/>
+        <image name="stop.png" width="22" height="22"/>
     </resources>
 </document>

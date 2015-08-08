@@ -11,23 +11,27 @@ import WebKit
 
 class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollViewDelegate {
     
+    //Não declarar variável como weak para só ser destruída no final da execução do app
+    
     var webView: WKWebView!
     //Ultimo Offset para scrollview esconder o tab bar
     var lastOffset = CGPoint()
     @IBOutlet weak var barraProgresso: UIProgressView!
     @IBOutlet weak var toolBar: UIToolbar!
-    @IBOutlet weak var btnStop: UIBarButtonItem!
-    @IBOutlet weak var btnRefresh: UIBarButtonItem!
+    @IBOutlet var btnStop: UIBarButtonItem!
+    @IBOutlet var btnRefresh: UIBarButtonItem!
     @IBOutlet weak var btnBack: UIBarButtonItem!
     @IBOutlet weak var btnNext: UIBarButtonItem!
     @IBOutlet weak var btnFacebook: UIBarButtonItem!
     @IBOutlet weak var btnHome: UIButton!    
     @IBOutlet weak var btnClose: UIButton!
     @IBOutlet weak var btnEmail: UIBarButtonItem!
+    @IBOutlet weak var btnCall: UIBarButtonItem!
     @IBOutlet weak var flexible1: UIBarButtonItem!
     @IBOutlet weak var flexible2: UIBarButtonItem!
     @IBOutlet weak var flexible3: UIBarButtonItem!
     @IBOutlet weak var flexible4: UIBarButtonItem!
+    @IBOutlet weak var flexible5: UIBarButtonItem!
     
     //Variavel para pegar os Frames Originais do NavBar e Toolbar
     var originalFrameToolBar = CGRect()
@@ -66,6 +70,7 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         btnFacebook.tintColor = UIColor.orangeColor()
         btnClose.tintColor = UIColor.orangeColor()
         btnEmail.tintColor = UIColor.orangeColor()
+        btnCall.tintColor = UIColor.orangeColor()
         
         
         webView = WKWebView(frame: CGRectZero)
@@ -80,8 +85,11 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         ])
         barraProgresso.progress = 0
         barraProgresso.hidden = true
-        btnRefresh.enabled = false
-        btnStop.enabled = false
+        //Iniciar Toolbar com botao Stop Invisivel
+        toolBar.items = [btnBack,flexible1,btnNext,flexible2,btnFacebook,flexible3,btnCall,flexible4,btnEmail,flexible5,btnRefresh]
+        //Iniciar Toolbar com botoes de anterior e proximo desativados
+        btnBack.enabled = false
+        btnNext.enabled = false
         
         //Setar a variavel scrollView para atualizala fora dos delegates
         scrollView = webView.scrollView
@@ -148,8 +156,6 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         let requisicao = NSURLRequest(URL: url!)
         webView.loadRequest(requisicao)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        btnRefresh.enabled = false
-        btnStop.enabled = true
     }
     
     @IBAction func goFacebook(sender: AnyObject)
@@ -157,13 +163,11 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         //Carregamento da Pagina Do Facebook
         barraProgresso.progress = 0
         barraProgresso.hidden = false
-//        let url = NSURL(string: "http://www.gamevicio.com.br")
         let url = NSURL(string: "https://www.facebook.com/inovesistemaspe")!
         let requisicao = NSURLRequest(URL: url)
         webView.loadRequest(requisicao)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        btnRefresh.enabled = false
-        btnStop.enabled = true
+
     }
     
     //MARK: Métodos Delegate do WebView
@@ -172,8 +176,25 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         UIApplication.sharedApplication().networkActivityIndicatorVisible = false
         barraProgresso.progress = 0
         barraProgresso.hidden = true
-        btnRefresh.enabled = true
-        btnStop.enabled = false
+        toolBar.items = [btnBack,flexible1,btnNext,flexible2,btnFacebook,flexible3,btnCall,flexible4,btnEmail,flexible5,btnRefresh]
+        
+        //Verificar Lista de Back e Foward
+        if (webView.canGoBack)
+        {
+            btnBack.enabled = true
+        }
+        else
+        {
+            btnBack.enabled = false
+        }
+        if (webView.canGoForward)
+        {
+            btnNext.enabled = true
+        }
+        else
+        {
+            btnNext.enabled = false
+        }
     }
     
     func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError)
@@ -189,8 +210,26 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         
         barraProgresso.progress = 0
         barraProgresso.hidden = true
-        btnRefresh.enabled = true
-        btnStop.enabled = false
+        
+        toolBar.items = [btnBack,flexible1,btnNext,flexible2,btnFacebook,flexible3,btnCall,flexible4,btnEmail,flexible5,btnRefresh]
+        
+        //Verificar Lista de Back e Foward
+        if (webView.canGoBack)
+        {
+            btnBack.enabled = true
+        }
+        else
+        {
+            btnBack.enabled = false
+        }
+        if (webView.canGoForward)
+        {
+            btnNext.enabled = true
+        }
+        else
+        {
+            btnNext.enabled = false
+        }
     }
     
     func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
@@ -199,24 +238,38 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         scrollView.contentInset.bottom = 0
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         barraProgresso.hidden = false
-        btnRefresh.enabled = false
-        btnStop.enabled = true
+        
+        toolBar.items = [btnBack,flexible1,btnNext,flexible2,btnFacebook,flexible3,btnCall,flexible4,btnEmail,flexible5,btnStop]
+        
+        //Verificar Lista de Back e Foward
+        if (webView.canGoBack)
+        {
+            btnBack.enabled = true
+        }
+        else
+        {
+            btnBack.enabled = false
+        }
+        if (webView.canGoForward)
+        {
+            btnNext.enabled = true
+        }
+        else
+        {
+            btnNext.enabled = false
+        }
     }
     
     @IBAction func goBack(sender: AnyObject) {
         webView.goBack()
         barraProgresso.progress = 0
         barraProgresso.hidden = false
-        btnRefresh.enabled = false
-        btnStop.enabled = true
     }
     
     @IBAction func goFoward(sender: AnyObject) {
         webView.goForward()
         barraProgresso.progress = 0
         barraProgresso.hidden = false
-        btnRefresh.enabled = false
-        btnStop.enabled = true
     }
     
     @IBAction func stopLoading(sender: AnyObject) {
@@ -224,25 +277,21 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
         webView.stopLoading()
         barraProgresso.progress = 0
         barraProgresso.hidden = true
-        btnRefresh.enabled = true
-//        self.toolBar.items = [btnBack, flexible1, btnNext, flexible2, btnFacebook, flexible3, btnEmail, flexible4, btnRefresh]
-        btnStop.enabled = false
+        
+        toolBar.items = [btnBack,flexible1,btnNext,flexible2,btnFacebook,flexible3,btnCall,flexible4,btnEmail,flexible5,btnRefresh]
+        
     }
 
     @IBAction func reload(sender: AnyObject) {
         webView.reload()
         barraProgresso.progress = 0
         barraProgresso.hidden = false
-        btnRefresh.enabled = false
-//        self.toolBar.items = [btnBack, flexible1, btnNext, flexible2, btnFacebook, flexible3, btnEmail, flexible4, btnStop]
-        btnStop.enabled = true
     }
     
     //MARK: Métodos Delegate do Scroll View do WebView
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let yOffset = scrollView.contentOffset.y
         deltaOffset = yOffset - lastOffset.y
-        print("\(deltaOffset) \(desacelerando)")
         if (deltaOffset > 0.0) && (toolBarVisivel) && !(zoom) && !(desacelerando)
         {
             self.toolBar.frame = CGRectMake(self.toolBar.frame.origin.x, self.originalFrameToolBar.origin.y + deltaOffset, self.toolBar.frame.size.width, self.toolBar.frame.size.height)
@@ -283,7 +332,6 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
     
     //ScrollView quando começa a desacelerar
     func scrollViewWillBeginDecelerating(scrollView: UIScrollView) {
-        print("iniciou")
         desacelerando = true
         if (deltaOffset < 0.0)
         {
@@ -299,7 +347,6 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
     
     //Final da desceleração do scrollView
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        print("parou")
         desacelerando = false
         if (deltaOffset > 0.0) && (deltaOffset < 44.0) && !(finalScroll) && !(inicioScroll)
         {
@@ -335,6 +382,77 @@ class WebViewViewController: UIViewController, WKNavigationDelegate, UIScrollVie
             }, completion: nil
             )
         }
+    }
+    
+    //MARK: Efetuar ligação pela operadora
+    func efetuarLigacao(numero: String) {
+        let fone: NSURL = NSURL(string: "tel://\(numero)")!
+        UIApplication.sharedApplication().openURL(fone)
+    }
+    
+    func selecionarOperadora(numero: String) {
+        //Criar o ActionSheet
+        let actionSheet = UIAlertController(title: "Operadora", message: "Caso não esteja no DDD 87", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let btnSemOperadora = UIAlertAction(title: "Sem operadora (Discagem direta)", style: UIAlertActionStyle.Default) { (btnSemOperadora) -> Void in
+            self.efetuarLigacao(numero)
+        }
+        let btnOperadoraOi = UIAlertAction(title: "Oi (31)", style: UIAlertActionStyle.Default) { (btnOperadoraOi) -> Void in
+            self.efetuarLigacao("03187" + numero)
+        }
+        let btnOperadoraTim = UIAlertAction(title: "Tim (41)", style: UIAlertActionStyle.Default) { (btnOperadoraTim) -> Void in
+            self.efetuarLigacao("04187" + numero)
+        }
+        let btnOperadoraClaro = UIAlertAction(title: "Claro (21)", style: UIAlertActionStyle.Default) { (btnOperadoraClaro) -> Void in
+            self.efetuarLigacao("02187" + numero)
+        }
+        let btnOperadoraVivo = UIAlertAction(title: "Vivo (15)", style: UIAlertActionStyle.Default) { (btnOperadoraVivo) -> Void in
+            self.efetuarLigacao("01587" + numero)
+        }
+        let btnOperadoraNextel = UIAlertAction(title: "Nextel (77)", style: UIAlertActionStyle.Default) { (btnOperadoraNextel) -> Void in
+            self.efetuarLigacao("07787" + numero)
+        }
+        let btnCancelar = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil)
+        
+        //Adicionar os Botões
+        actionSheet.addAction(btnSemOperadora)
+        actionSheet.addAction(btnOperadoraOi)
+        actionSheet.addAction(btnOperadoraTim)
+        actionSheet.addAction(btnOperadoraClaro)
+        actionSheet.addAction(btnOperadoraVivo)
+        actionSheet.addAction(btnOperadoraNextel)
+        actionSheet.addAction(btnCancelar)
+        
+        //Mostrar
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+    }
+    
+    @IBAction func menuTelefones(sender: AnyObject) {
+        //Criar o ActionSheet
+        let actionSheet = UIAlertController(title: "Ligar para Inove Sistemas", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let btnFixo = UIAlertAction(title: "Fixo - (87) 3831-1594", style: UIAlertActionStyle.Default) { (btnFixo) -> Void in
+            self.selecionarOperadora("38311594")
+        }
+        let btnTim = UIAlertAction(title: "Tim - (87) 99965-6771", style: UIAlertActionStyle.Default) { (btnTim) -> Void in
+            self.selecionarOperadora("999656771")
+        }
+        let btnOi = UIAlertAction(title: "Oi - (87) 98843-9523", style: UIAlertActionStyle.Default) { (btnOi) -> Void in
+            self.selecionarOperadora("988439523")
+        }
+        let btnCancelar = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil)
+        
+        //Adicionar os Botões
+        actionSheet.addAction(btnFixo)
+        actionSheet.addAction(btnTim)
+        actionSheet.addAction(btnOi)
+        actionSheet.addAction(btnCancelar)
+        
+        //Para mostrar popup no iPad
+        actionSheet.popoverPresentationController?.sourceRect = (sender as! UIButton).frame
+        actionSheet.popoverPresentationController?.sourceView = self.view
+        actionSheet.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection.Up
+        
+        //Mostrar
+        self.presentViewController(actionSheet, animated: true, completion: nil)
     }
     
 }

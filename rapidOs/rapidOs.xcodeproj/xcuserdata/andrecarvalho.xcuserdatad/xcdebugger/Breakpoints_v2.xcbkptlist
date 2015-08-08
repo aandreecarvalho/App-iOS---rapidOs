@@ -167,11 +167,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "viewWillDisappear(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -183,11 +183,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
             landmarkName = "scrollViewWillBeginDragging(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -199,27 +199,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "286"
-            endingLineNumber = "286"
-            landmarkName = "scrollViewWillBeginDecelerating(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
             landmarkName = "viewDidAppear(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -231,11 +215,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "WebViewViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -247,11 +231,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
             landmarkName = "WebViewViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -263,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -279,11 +263,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "webView(_:didFinishNavigation:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -295,11 +279,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rapidOs/WebViewViewController.swift"
+            timestampString = "460692089.077932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
             landmarkName = "goFacebook(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -311,43 +311,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "190"
-            endingLineNumber = "190"
-            landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "goFacebook(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "goHome(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -359,11 +327,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -375,27 +343,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
-            landmarkName = "webView(_:didFinishNavigation:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -407,11 +359,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "goHome(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -423,11 +375,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
             landmarkName = "goHome(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -439,11 +391,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -455,11 +407,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -471,11 +423,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "webView(_:didFailProvisionalNavigation:withError:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -487,11 +439,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "webView(_:didFinishNavigation:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -503,11 +455,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "webView(_:didFinishNavigation:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -519,11 +471,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
             landmarkName = "reload(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -535,12 +487,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rapidOs/WebViewViewController.swift"
-            timestampString = "458700823.94278"
+            timestampString = "460692089.077932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
-            landmarkName = "reload(_:)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rapidOs/WebViewViewController.swift"
+            timestampString = "460692089.077932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
+            landmarkName = "webView(_:didStartProvisionalNavigation:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rapidOs/WebViewViewController.swift"
+            timestampString = "460697353.211964"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "389"
+            endingLineNumber = "389"
+            landmarkName = "efetuarLigacao(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rapidOs/WebViewViewController.swift"
+            timestampString = "460699340.981554"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
+            landmarkName = "menuTelefones(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
